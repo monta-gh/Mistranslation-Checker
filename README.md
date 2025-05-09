@@ -39,7 +39,7 @@ The tool expects an Excel file named `test_trans.xlsx` with the following struct
 | F      | Source Comparison | Comparison between the source and back translation                                                                                         |
 | G      | Risk Score        | Numerical score reflecting the severity of mistranslation (e.g., 0–4, where higher values indicate a greater likelihood of mistranslation) |
 
-Only columns A and B are required as input. The remaining columns (D–G) will be filled by the script.
+Only columns A, B, and C are required as input. The remaining columns (D–G) will be filled by the script.
 
 ## 🚀 How to Run
 
@@ -63,7 +63,7 @@ python mistranslation_detector.py
 
 ## 📝 Output
 
-- A log file named `check_log_YYYYMMDD_HHMMSS.txt` will be generated in the working directory.
+- A log file named `gpt_log_YYYYMMDD_HHMMSS.txt` will be generated in the working directory.
 - A result Excel file named `test_trans_done.xlsx` will also be generated, containing the original input along with evaluation results in columns D–G.
 
 ## 📌 Notes
